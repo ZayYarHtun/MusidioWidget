@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Musidio</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Mon, 25 Nov 2022 22:20:52 +0700</pubDate>
+            <sparkle:version>54</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://raw.githubusercontent.com/ZayYarHtun/MusidioWidget/release/sparkle/Musidio.zip" type="application/octet-stream" sparkle:edSignature="aU1TlxaxEOxdJmJlizglZbMW9ytCIrZh4Y4bPxSaUNbiNAxdEuglUtuyRctAidFoPDnZ4IHm9giofKx4JP5LAg==" length="1754906"/>
+        </item>
+    </channel>
+</rss>
