@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6814AE0F292B1CD500954328 /* AppUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814AE0E292B1CD500954328 /* AppUpdateController.swift */; };
+		6814AE12292B31C300954328 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 6814AE11292B31C300954328 /* Sparkle */; };
+		682605AA2A10E6A800D09F82 /* MusidioEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682605A92A10E6A800D09F82 /* MusidioEngine.framework */; };
+		682605AB2A10E6A800D09F82 /* MusidioEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 682605A92A10E6A800D09F82 /* MusidioEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6877D3892C765859008B3598 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877D3882C765859008B3598 /* Log.swift */; };
+		6877D3942C7B9CF1008B3598 /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 6877D3932C7B9CF1008B3598 /* Settings */; };
+		68982E262A9137780016C1CD /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68982E252A9137780016C1CD /* PlayerManager.swift */; };
+		68982E282A91BAFB0016C1CD /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68982E272A91BAFB0016C1CD /* Debouncer.swift */; };
+		BB03D729284722000004117E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03D728284722000004117E /* Notification.swift */; };
+		BB0994DC28394E24009F124E /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0994DB28394E24009F124E /* HoverButton.swift */; };
+		BB1CF0C728489C1C008B9E74 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CF0C628489C1C008B9E74 /* UserDefaults.swift */; };
+		BB1CF0C928489CC8008B9E74 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CF0C828489CC8008B9E74 /* Constants.swift */; };
+		BB276640282913F7008C186E /* NSStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27663F282913F7008C186E /* NSStoryboard.swift */; };
+		BB27664228291627008C186E /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27664128291627008C186E /* NSObject.swift */; };
+		BB2EC534284684B000CD875E /* SettingPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2EC533284684B000CD875E /* SettingPreferences.swift */; };
+		BB2EC5362846864C00CD875E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2EC5352846864C00CD875E /* Utility.swift */; };
+		BB34990928180C27001A0E5F /* PlayerWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34990828180C27001A0E5F /* PlayerWC.swift */; };
+		BB34B9412834C0DF0009AF0A /* MusidioApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34B9402834C0DF0009AF0A /* MusidioApplication.swift */; };
+		BB40D4052844668C003C5C3B /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB40D4042844668C003C5C3B /* NSColor.swift */; };
+		BB4DB1F72817BB2900318C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DB1F62817BB2900318C52 /* AppDelegate.swift */; };
+		BB4DB1F92817BB2900318C52 /* GeneralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DB1F82817BB2900318C52 /* GeneralVC.swift */; };
+		BB4DB1FB2817BB2C00318C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4DB1FA2817BB2C00318C52 /* Assets.xcassets */; };
+		BB4DB1FE2817BB2C00318C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4DB1FC2817BB2C00318C52 /* Main.storyboard */; };
+		BB4DB2092817BB2C00318C52 /* MusidioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DB2082817BB2C00318C52 /* MusidioTests.swift */; };
+		BB4DB2132817BB2C00318C52 /* MusidioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DB2122817BB2C00318C52 /* MusidioUITests.swift */; };
+		BB4DB2152817BB2C00318C52 /* MusidioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DB2142817BB2C00318C52 /* MusidioUITestsLaunchTests.swift */; };
+		BB4DB2222817BDAC00318C52 /* PrefWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DB2212817BDAC00318C52 /* PrefWC.swift */; };
+		BB82A04E28297EA5007B2363 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82A04D28297EA5007B2363 /* DraggableView.swift */; };
+		BBAFBF3D2845E6AA00F04F3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAFBF3C2845E6AA00F04F3C /* main.swift */; };
+		BBAFBF4B2845F16400F04F3C /* MusidioHelper.app in Copy Helper App For Start At Login */ = {isa = PBXBuildFile; fileRef = BBAFBF3A2845E6AA00F04F3C /* MusidioHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBAFBF4D2845F1AC00F04F3C /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAFBF4C2845F1AC00F04F3C /* ServiceManagement.framework */; };
+		BBB7E72A2840849100668AAF /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7E7292840849100668AAF /* Preferences.swift */; };
+		BBB7E72F2840860100668AAF /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7E72D2840860100668AAF /* AboutVC.swift */; };
+		BBC5835D282D207000200FB3 /* PlaybackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5835C282D207000200FB3 /* PlaybackBar.swift */; };
+		BBDC5063282E27C30008190A /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC5062282E27C30008190A /* Double.swift */; };
+		BBDC718F2840D92500F2E783 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC718E2840D92500F2E783 /* Bundle.swift */; };
+		BBEBF91E28183B4800872356 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBF91D28183B4800872356 /* PlayerVC.swift */; };
+		BBEBF92128183C3B00872356 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEBF92028183C3B00872356 /* NSView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB4DB2052817BB2C00318C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB4DB1EB2817BB2900318C52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4DB1F22817BB2900318C52;
+			remoteInfo = Musidio;
+		};
+		BB4DB20F2817BB2C00318C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB4DB1EB2817BB2900318C52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4DB1F22817BB2900318C52;
+			remoteInfo = Musidio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		682605AC2A10E6A800D09F82 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				682605AB2A10E6A800D09F82 /* MusidioEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAFBF4A2845F14600F04F3C /* Copy Helper App For Start At Login */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				BBAFBF4B2845F16400F04F3C /* MusidioHelper.app in Copy Helper App For Start At Login */,
+			);
+			name = "Copy Helper App For Start At Login";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6814AE0E292B1CD500954328 /* AppUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateController.swift; sourceTree = "<group>"; };
+		68207CF62A13554D00D77E0A /* MusidioProEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusidioProEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68207CFC2A135C5A00D77E0A /* MusidioProEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusidioProEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		682605A92A10E6A800D09F82 /* MusidioEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusidioEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6877D3882C765859008B3598 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		68982E252A9137780016C1CD /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		68982E272A91BAFB0016C1CD /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		68A8C84C2A8FDD78000788D4 /* MusidioProEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusidioProEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB03D728284722000004117E /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		BB0994DB28394E24009F124E /* HoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
+		BB1CF0C628489C1C008B9E74 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		BB1CF0C828489CC8008B9E74 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB27663F282913F7008C186E /* NSStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStoryboard.swift; sourceTree = "<group>"; };
+		BB27664128291627008C186E /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		BB2EC533284684B000CD875E /* SettingPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPreferences.swift; sourceTree = "<group>"; };
+		BB2EC5352846864C00CD875E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		BB34990828180C27001A0E5F /* PlayerWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWC.swift; sourceTree = "<group>"; };
+		BB34B9402834C0DF0009AF0A /* MusidioApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusidioApplication.swift; sourceTree = "<group>"; };
+		BB3570C22826C1A400E0EB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB40D4042844668C003C5C3B /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
+		BB4DB1F32817BB2900318C52 /* Musidio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musidio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4DB1F62817BB2900318C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB4DB1F82817BB2900318C52 /* GeneralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralVC.swift; sourceTree = "<group>"; };
+		BB4DB1FA2817BB2C00318C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB4DB1FD2817BB2C00318C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB4DB1FF2817BB2C00318C52 /* Musidio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Musidio.entitlements; sourceTree = "<group>"; };
+		BB4DB2042817BB2C00318C52 /* MusidioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusidioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4DB2082817BB2C00318C52 /* MusidioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusidioTests.swift; sourceTree = "<group>"; };
+		BB4DB20E2817BB2C00318C52 /* MusidioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusidioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4DB2122817BB2C00318C52 /* MusidioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusidioUITests.swift; sourceTree = "<group>"; };
+		BB4DB2142817BB2C00318C52 /* MusidioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusidioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB4DB2212817BDAC00318C52 /* PrefWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefWC.swift; sourceTree = "<group>"; };
+		BB82A04D28297EA5007B2363 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		BBAFBF3A2845E6AA00F04F3C /* MusidioHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusidioHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAFBF3C2845E6AA00F04F3C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BBAFBF452845E6AC00F04F3C /* MusidioHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusidioHelper.entitlements; sourceTree = "<group>"; };
+		BBAFBF492845E6E800F04F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBAFBF4C2845F1AC00F04F3C /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		BBB7E7292840849100668AAF /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		BBB7E72D2840860100668AAF /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		BBBEE28428283705003FE713 /* MusidioCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusidioCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC5835C282D207000200FB3 /* PlaybackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackBar.swift; sourceTree = "<group>"; };
+		BBDC5062282E27C30008190A /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		BBDC718E2840D92500F2E783 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		BBEBF91D28183B4800872356 /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		BBEBF92028183C3B00872356 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB4DB1F02817BB2900318C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6814AE12292B31C300954328 /* Sparkle in Frameworks */,
+				6877D3942C7B9CF1008B3598 /* Settings in Frameworks */,
+				682605AA2A10E6A800D09F82 /* MusidioEngine.framework in Frameworks */,
+				BBAFBF4D2845F1AC00F04F3C /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DB2012817BB2C00318C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DB20B2817BB2C00318C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAFBF372845E6AA00F04F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB2EC5322846847C00CD875E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BB2EC533284684B000CD875E /* SettingPreferences.swift */,
+				BB2EC5352846864C00CD875E /* Utility.swift */,
+				BB1CF0C828489CC8008B9E74 /* Constants.swift */,
+				68982E252A9137780016C1CD /* PlayerManager.swift */,
+				68982E272A91BAFB0016C1CD /* Debouncer.swift */,
+				6877D3882C765859008B3598 /* Log.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BB4DB1EA2817BB2900318C52 = {
+			isa = PBXGroup;
+			children = (
+				BB4DB1F52817BB2900318C52 /* Musidio */,
+				BB4DB2072817BB2C00318C52 /* MusidioTests */,
+				BB4DB2112817BB2C00318C52 /* MusidioUITests */,
+				BBAFBF3B2845E6AA00F04F3C /* MusidioHelper */,
+				BB4DB1F42817BB2900318C52 /* Products */,
+				BBBEE28328283705003FE713 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB4DB1F42817BB2900318C52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DB1F32817BB2900318C52 /* Musidio.app */,
+				BB4DB2042817BB2C00318C52 /* MusidioTests.xctest */,
+				BB4DB20E2817BB2C00318C52 /* MusidioUITests.xctest */,
+				BBAFBF3A2845E6AA00F04F3C /* MusidioHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB4DB1F52817BB2900318C52 /* Musidio */ = {
+			isa = PBXGroup;
+			children = (
+				BBBEE28C28283A94003FE713 /* Source */,
+				BB3570C22826C1A400E0EB2A /* Info.plist */,
+				BB4DB1FA2817BB2C00318C52 /* Assets.xcassets */,
+				BB4DB1FF2817BB2C00318C52 /* Musidio.entitlements */,
+			);
+			path = Musidio;
+			sourceTree = "<group>";
+		};
+		BB4DB2072817BB2C00318C52 /* MusidioTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DB2082817BB2C00318C52 /* MusidioTests.swift */,
+			);
+			path = MusidioTests;
+			sourceTree = "<group>";
+		};
+		BB4DB2112817BB2C00318C52 /* MusidioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DB2122817BB2C00318C52 /* MusidioUITests.swift */,
+				BB4DB2142817BB2C00318C52 /* MusidioUITestsLaunchTests.swift */,
+			);
+			path = MusidioUITests;
+			sourceTree = "<group>";
+		};
+		BBAFBF3B2845E6AA00F04F3C /* MusidioHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BBAFBF492845E6E800F04F3C /* Info.plist */,
+				BBAFBF3C2845E6AA00F04F3C /* main.swift */,
+				BBAFBF452845E6AC00F04F3C /* MusidioHelper.entitlements */,
+			);
+			path = MusidioHelper;
+			sourceTree = "<group>";
+		};
+		BBBEE28328283705003FE713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68A8C84C2A8FDD78000788D4 /* MusidioProEngine.framework */,
+				68207CFC2A135C5A00D77E0A /* MusidioProEngine.framework */,
+				68207CF62A13554D00D77E0A /* MusidioProEngine.framework */,
+				682605A92A10E6A800D09F82 /* MusidioEngine.framework */,
+				BBAFBF4C2845F1AC00F04F3C /* ServiceManagement.framework */,
+				BBBEE28428283705003FE713 /* MusidioCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBBEE28C28283A94003FE713 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DB1F62817BB2900318C52 /* AppDelegate.swift */,
+				BB34B9402834C0DF0009AF0A /* MusidioApplication.swift */,
+				BB2EC5322846847C00CD875E /* Common */,
+				BBEBF91F28183B8B00872356 /* Extensions */,
+				BBBEE28D28283AFC003FE713 /* Views */,
+				BBEBF91C2818393200872356 /* Controllers */,
+				BBEBF91B2818391A00872356 /* Windows */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BBBEE28D28283AFC003FE713 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DB1FC2817BB2C00318C52 /* Main.storyboard */,
+				BB82A04D28297EA5007B2363 /* DraggableView.swift */,
+				BBC5835C282D207000200FB3 /* PlaybackBar.swift */,
+				BB0994DB28394E24009F124E /* HoverButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBEBF91B2818391A00872356 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DB2212817BDAC00318C52 /* PrefWC.swift */,
+				BB34990828180C27001A0E5F /* PlayerWC.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		BBEBF91C2818393200872356 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DB1F82817BB2900318C52 /* GeneralVC.swift */,
+				BBB7E72D2840860100668AAF /* AboutVC.swift */,
+				BBEBF91D28183B4800872356 /* PlayerVC.swift */,
+				6814AE0E292B1CD500954328 /* AppUpdateController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BBEBF91F28183B8B00872356 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBEBF92028183C3B00872356 /* NSView.swift */,
+				BB27663F282913F7008C186E /* NSStoryboard.swift */,
+				BB27664128291627008C186E /* NSObject.swift */,
+				BBDC5062282E27C30008190A /* Double.swift */,
+				BBB7E7292840849100668AAF /* Preferences.swift */,
+				BBDC718E2840D92500F2E783 /* Bundle.swift */,
+				BB40D4042844668C003C5C3B /* NSColor.swift */,
+				BB03D728284722000004117E /* Notification.swift */,
+				BB1CF0C628489C1C008B9E74 /* UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB4DB1F22817BB2900318C52 /* Musidio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4DB2182817BB2C00318C52 /* Build configuration list for PBXNativeTarget "Musidio" */;
+			buildPhases = (
+				BB4DB1EF2817BB2900318C52 /* Sources */,
+				BB4DB1F02817BB2900318C52 /* Frameworks */,
+				BB4DB1F12817BB2900318C52 /* Resources */,
+				BBAFBF4A2845F14600F04F3C /* Copy Helper App For Start At Login */,
+				682605AC2A10E6A800D09F82 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Musidio;
+			packageProductDependencies = (
+				6814AE11292B31C300954328 /* Sparkle */,
+				6877D3932C7B9CF1008B3598 /* Settings */,
+			);
+			productName = Musidio;
+			productReference = BB4DB1F32817BB2900318C52 /* Musidio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB4DB2032817BB2C00318C52 /* MusidioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4DB21B2817BB2C00318C52 /* Build configuration list for PBXNativeTarget "MusidioTests" */;
+			buildPhases = (
+				BB4DB2002817BB2C00318C52 /* Sources */,
+				BB4DB2012817BB2C00318C52 /* Frameworks */,
+				BB4DB2022817BB2C00318C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4DB2062817BB2C00318C52 /* PBXTargetDependency */,
+			);
+			name = MusidioTests;
+			productName = MusidioTests;
+			productReference = BB4DB2042817BB2C00318C52 /* MusidioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB4DB20D2817BB2C00318C52 /* MusidioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4DB21E2817BB2C00318C52 /* Build configuration list for PBXNativeTarget "MusidioUITests" */;
+			buildPhases = (
+				BB4DB20A2817BB2C00318C52 /* Sources */,
+				BB4DB20B2817BB2C00318C52 /* Frameworks */,
+				BB4DB20C2817BB2C00318C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4DB2102817BB2C00318C52 /* PBXTargetDependency */,
+			);
+			name = MusidioUITests;
+			productName = MusidioUITests;
+			productReference = BB4DB20E2817BB2C00318C52 /* MusidioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BBAFBF392845E6AA00F04F3C /* MusidioHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBAFBF482845E6AC00F04F3C /* Build configuration list for PBXNativeTarget "MusidioHelper" */;
+			buildPhases = (
+				BBAFBF362845E6AA00F04F3C /* Sources */,
+				BBAFBF372845E6AA00F04F3C /* Frameworks */,
+				BBAFBF382845E6AA00F04F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusidioHelper;
+			productName = MusidioHelper;
+			productReference = BBAFBF3A2845E6AA00F04F3C /* MusidioHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB4DB1EB2817BB2900318C52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					BB4DB1F22817BB2900318C52 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					BB4DB2032817BB2C00318C52 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = BB4DB1F22817BB2900318C52;
+					};
+					BB4DB20D2817BB2C00318C52 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = BB4DB1F22817BB2900318C52;
+					};
+					BBAFBF392845E6AA00F04F3C = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = BB4DB1EE2817BB2900318C52 /* Build configuration list for PBXProject "Musidio" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB4DB1EA2817BB2900318C52;
+			packageReferences = (
+				BB8861DA283F3E2100CF9209 /* XCRemoteSwiftPackageReference "Preferences" */,
+				6814AE10292B31C300954328 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			productRefGroup = BB4DB1F42817BB2900318C52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB4DB1F22817BB2900318C52 /* Musidio */,
+				BB4DB2032817BB2C00318C52 /* MusidioTests */,
+				BB4DB20D2817BB2C00318C52 /* MusidioUITests */,
+				BBAFBF392845E6AA00F04F3C /* MusidioHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB4DB1F12817BB2900318C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DB1FB2817BB2C00318C52 /* Assets.xcassets in Resources */,
+				BB4DB1FE2817BB2C00318C52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DB2022817BB2C00318C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DB20C2817BB2C00318C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAFBF382845E6AA00F04F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB4DB1EF2817BB2900318C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2EC5362846864C00CD875E /* Utility.swift in Sources */,
+				BBB7E72A2840849100668AAF /* Preferences.swift in Sources */,
+				BB4DB1F92817BB2900318C52 /* GeneralVC.swift in Sources */,
+				BB34B9412834C0DF0009AF0A /* MusidioApplication.swift in Sources */,
+				BBDC5063282E27C30008190A /* Double.swift in Sources */,
+				BB40D4052844668C003C5C3B /* NSColor.swift in Sources */,
+				BB1CF0C928489CC8008B9E74 /* Constants.swift in Sources */,
+				BB82A04E28297EA5007B2363 /* DraggableView.swift in Sources */,
+				68982E282A91BAFB0016C1CD /* Debouncer.swift in Sources */,
+				BB27664228291627008C186E /* NSObject.swift in Sources */,
+				BBEBF92128183C3B00872356 /* NSView.swift in Sources */,
+				BBC5835D282D207000200FB3 /* PlaybackBar.swift in Sources */,
+				BB2EC534284684B000CD875E /* SettingPreferences.swift in Sources */,
+				BB0994DC28394E24009F124E /* HoverButton.swift in Sources */,
+				BB4DB1F72817BB2900318C52 /* AppDelegate.swift in Sources */,
+				BB1CF0C728489C1C008B9E74 /* UserDefaults.swift in Sources */,
+				BB34990928180C27001A0E5F /* PlayerWC.swift in Sources */,
+				BBB7E72F2840860100668AAF /* AboutVC.swift in Sources */,
+				6814AE0F292B1CD500954328 /* AppUpdateController.swift in Sources */,
+				BBDC718F2840D92500F2E783 /* Bundle.swift in Sources */,
+				BB03D729284722000004117E /* Notification.swift in Sources */,
+				BB4DB2222817BDAC00318C52 /* PrefWC.swift in Sources */,
+				BBEBF91E28183B4800872356 /* PlayerVC.swift in Sources */,
+				BB276640282913F7008C186E /* NSStoryboard.swift in Sources */,
+				68982E262A9137780016C1CD /* PlayerManager.swift in Sources */,
+				6877D3892C765859008B3598 /* Log.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DB2002817BB2C00318C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DB2092817BB2C00318C52 /* MusidioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DB20A2817BB2C00318C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DB2132817BB2C00318C52 /* MusidioUITests.swift in Sources */,
+				BB4DB2152817BB2C00318C52 /* MusidioUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAFBF362845E6AA00F04F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBAFBF3D2845E6AA00F04F3C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB4DB2062817BB2C00318C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4DB1F22817BB2900318C52 /* Musidio */;
+			targetProxy = BB4DB2052817BB2C00318C52 /* PBXContainerItemProxy */;
+		};
+		BB4DB2102817BB2C00318C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4DB1F22817BB2900318C52 /* Musidio */;
+			targetProxy = BB4DB20F2817BB2C00318C52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB4DB1FC2817BB2C00318C52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4DB1FD2817BB2C00318C52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB4DB2162817BB2C00318C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB4DB2172817BB2C00318C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BB4DB2192817BB2C00318C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Musidio/Musidio.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 54;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Musidio/Info.plist;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "App need to use apple event.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = Musidio.MusidioApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.Musidio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB4DB21A2817BB2C00318C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Musidio/Musidio.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 54;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Musidio/Info.plist;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "App need to use apple event.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = Musidio.MusidioApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.Musidio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BB4DB21C2817BB2C00318C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.MusidioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musidio.app/Contents/MacOS/Musidio";
+			};
+			name = Debug;
+		};
+		BB4DB21D2817BB2C00318C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.MusidioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musidio.app/Contents/MacOS/Musidio";
+			};
+			name = Release;
+		};
+		BB4DB21F2817BB2C00318C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.MusidioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Musidio;
+			};
+			name = Debug;
+		};
+		BB4DB2202817BB2C00318C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.MusidioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Musidio;
+			};
+			name = Release;
+		};
+		BBAFBF462845E6AC00F04F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MusidioHelper/MusidioHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusidioHelper/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.MusidioHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BBAFBF472845E6AC00F04F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MusidioHelper/MusidioHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusidioHelper/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdio.MusidioHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB4DB1EE2817BB2900318C52 /* Build configuration list for PBXProject "Musidio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DB2162817BB2C00318C52 /* Debug */,
+				BB4DB2172817BB2C00318C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4DB2182817BB2C00318C52 /* Build configuration list for PBXNativeTarget "Musidio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DB2192817BB2C00318C52 /* Debug */,
+				BB4DB21A2817BB2C00318C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4DB21B2817BB2C00318C52 /* Build configuration list for PBXNativeTarget "MusidioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DB21C2817BB2C00318C52 /* Debug */,
+				BB4DB21D2817BB2C00318C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4DB21E2817BB2C00318C52 /* Build configuration list for PBXNativeTarget "MusidioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DB21F2817BB2C00318C52 /* Debug */,
+				BB4DB2202817BB2C00318C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBAFBF482845E6AC00F04F3C /* Build configuration list for PBXNativeTarget "MusidioHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBAFBF462845E6AC00F04F3C /* Debug */,
+				BBAFBF472845E6AC00F04F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6814AE10292B31C300954328 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.0;
+			};
+		};
+		BB8861DA283F3E2100CF9209 /* XCRemoteSwiftPackageReference "Preferences" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Preferences";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6814AE11292B31C300954328 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6814AE10292B31C300954328 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		6877D3932C7B9CF1008B3598 /* Settings */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB8861DA283F3E2100CF9209 /* XCRemoteSwiftPackageReference "Preferences" */;
+			productName = Settings;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BB4DB1EB2817BB2900318C52 /* Project object */;
+}
